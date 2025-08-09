@@ -6,6 +6,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { Container } from "@/components/Container";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
+import { siteConfig } from "@/lib/data/site";
 
 const links = [
   { href: "/", label: "Home" },
@@ -60,18 +61,22 @@ export function Navbar() {
       <Container>
         <nav className="h-14 flex items-center justify-between gap-3">
           <div className="flex items-center gap-6">
+            <Link href="/" className="font-semibold brand-text hidden sm:inline">{siteConfig.name}</Link>
             {links.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
                 className={clsx(
-                  "text-sm font-medium hover:text-brand-600 dark:hover:text-brand-400 transition",
+                  "relative text-sm font-medium hover:text-brand-600 dark:hover:text-brand-400 transition",
                   pathname === l.href
                     ? "text-brand-700 dark:text-brand-300"
                     : "text-neutral-700 dark:text-neutral-200"
                 )}
               >
-                {l.label}
+                <span>{l.label}</span>
+                {pathname === l.href && (
+                  <span className="absolute -bottom-2 left-0 h-0.5 w-full brand-gradient rounded" />
+                )}
               </Link>
             ))}
           </div>

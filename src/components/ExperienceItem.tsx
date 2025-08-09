@@ -2,7 +2,7 @@ import type { Experience } from "@/lib/data/experience";
 
 export function ExperienceItem({ item }: { item: Experience }) {
   return (
-    <div className="card brand-outline p-5">
+    <div className="card brand-outline p-5 hover:shadow-lg hover:-translate-y-0.5">
       <div className="bar-gradient mb-3 rounded" />
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="text-lg font-semibold leading-tight brand-text">

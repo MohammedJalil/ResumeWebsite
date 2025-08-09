@@ -32,6 +32,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html suppressHydrationWarning lang="en">
       <body className="min-h-screen flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {/* Subtle radial gradient background */}
+          <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
+            <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1200px] h-[800px] rounded-full brand-gradient opacity-20 blur-3xl" />
+            <div className="absolute inset-0 bg-[length:var(--grid-size)_var(--grid-size)] bg-grid dark:bg-grid-dark grid-fade" />
+          </div>
+
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />

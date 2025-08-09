@@ -11,6 +11,11 @@ export default function HomePage() {
     <div>
       <section className="section relative overflow-hidden">
         <div className="absolute inset-0 bg-[length:var(--grid-size)_var(--grid-size)] bg-grid dark:bg-grid-dark pointer-events-none" />
+        {/* Decorative blobs */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          <div className="blob absolute -top-10 -left-10 w-64 h-64 rounded-full" style={{ background: "radial-gradient(circle at 30% 30%, var(--acc-start), transparent 60%)" }} />
+          <div className="blob absolute bottom-0 right-10 w-72 h-72 rounded-full" style={{ background: "radial-gradient(circle at 70% 70%, var(--acc-end), transparent 60%)" }} />
+        </div>
         <Container>
           <div className="relative">
             <p className="text-sm text-brand-600 dark:text-brand-400 mb-3">Open to opportunities</p>
