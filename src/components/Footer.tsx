@@ -12,7 +12,6 @@ export function Footer() {
             <p className="text-neutral-600 dark:text-neutral-400">
               © {year} {siteConfig.name}. All rights reserved.
             </p>
-            <p className="text-neutral-500">Built with Next.js & Tailwind</p>
           </div>
         </Container>
       </div>
