@@ -3,7 +3,7 @@ import type { Experience } from "@/lib/data/experience";
 export function Timeline({ items }: { items: Experience[] }) {
   return (
     <ol className="relative border-s border-neutral-200 dark:border-neutral-800 ml-3">
-      {items.map((it, idx) => (
+      {items.map((it) => (
         <li key={`${it.company}-${it.start}`} className="mb-8 ms-6">
           <span className="absolute -start-2.5 flex h-5 w-5 items-center justify-center rounded-full brand-gradient" />
           <h3 className="text-base font-semibold brand-text">

@@ -29,6 +29,8 @@ function AccentPicker() {
     const initial = saved || accent;
     document.documentElement.setAttribute("data-accent", initial);
     setAccent(initial);
+    // We intentionally ignore 'accent' to only run on mount.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const update = (key: string) => {
     setAccent(key);

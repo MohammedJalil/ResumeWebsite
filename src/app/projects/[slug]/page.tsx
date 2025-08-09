@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { projects } from "@/lib/data/projects";
 import { Badge } from "@/components/Badge";
 import { Container } from "@/components/Container";
-import Link from "next/link";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
