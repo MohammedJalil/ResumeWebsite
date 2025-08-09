@@ -1,0 +1,33 @@
+{
+  "name": "Mohammed-Taqi Jalil",
+  "email": "mohammed.jalil.email@gmail.comAustin",
+  "socials": {
+    "github": "https://github.com/MohammedJalil/Projects",
+    "linkedin": "https://www.linkedin.com/in/mohammedtaqijalil/",
+    "twitter": ""
+  },
+  "skills": [
+    "Languages & Tools: Python Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Scikit-learn",
+    "R ggplot2",
+    "tidyverse",
+    "SQL MySQL",
+    "MS SQL Server",
+    "Tableau",
+    "Power BI",
+    "Jupyter Notebook",
+    "VSCode",
+    "Azure DevOps",
+    "Data Expertise: Data Wrangling",
+    "Regression Analysis",
+    "Predictive Modeling",
+    "Business Intelligence",
+    "Exploratory Data Analysis EDA",
+    "ETL",
+    "Dashboard Development",
+    "Statistical Inference"
+  ],
+  "experiences": []
+}
