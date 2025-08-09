@@ -32,14 +32,14 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
           <div className="flex gap-4">
             {project.link && (
-              <Link className="text-brand-600 dark:text-brand-400 hover:underline" href={project.link}>
+              <a className="text-brand-600 dark:text-brand-400 hover:underline" href={project.link} target="_blank" rel="noreferrer noopener">
                 Live
-              </Link>
+              </a>
             )}
             {project.repo && (
-              <Link className="text-brand-600 dark:text-brand-400 hover:underline" href={project.repo}>
+              <a className="text-brand-600 dark:text-brand-400 hover:underline" href={project.repo} target="_blank" rel="noreferrer noopener">
                 Code
-              </Link>
+              </a>
             )}
           </div>
         </div>

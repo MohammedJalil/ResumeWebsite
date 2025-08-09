@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Badge } from "@/components/Badge";
 import type { Project } from "@/lib/data/projects";
 
@@ -18,14 +17,14 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
       <div className="mt-auto flex gap-3">
         {project.link && (
-          <Link href={project.link} className="text-brand-600 dark:text-brand-400 hover:underline text-sm">
+          <a href={project.link} target="_blank" rel="noreferrer noopener" className="text-brand-600 dark:text-brand-400 hover:underline text-sm">
             Live
-          </Link>
+          </a>
         )}
         {project.repo && (
-          <Link href={project.repo} className="text-brand-600 dark:text-brand-400 hover:underline text-sm">
+          <a href={project.repo} target="_blank" rel="noreferrer noopener" className="text-brand-600 dark:text-brand-400 hover:underline text-sm">
             Code
-          </Link>
+          </a>
         )}
       </div>
     </div>
